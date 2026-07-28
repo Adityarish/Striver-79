@@ -57,7 +57,7 @@ function rawUrlFor(problem, lang){
   const ext = EXT_MAP[lang];
   const path = `${problem.topic}/${lang}/${problem.slug}.${ext}`;
   const encodedPath = path.split("/").map(encodeURIComponent).join("/");
-  return `../${encodedPath}`;
+  return `./${encodedPath}`;
 }
 
 function githubBlobUrlFor(problem, lang){
@@ -87,7 +87,7 @@ function showToast(message, type = "success"){
 /* ---------------------------------------------------------------------- */
 async function loadProblems(){
   try{
-    const res = await fetch("data/problems.json");
+    const res = await fetch("striver-79-site/data/problems.json");
     if (!res.ok) throw new Error("Failed to load problems.json");
     const data = await res.json();
     state.problems = data;

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Striver-79 · DSA Solutions Explorer</title>
+<meta name="description" content="Striver DSA-79 Sheet solutions in C++, Java and Python — browsable, searchable, syntax-highlighted." />
+
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Prism.js theme -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs8/hDgqyx+ZunKuNspyz9TzB1XdDbF6ZQyU9zPFPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Vh8UdCH6qJVeCwypWvB0VqjaeXd8fbTLGDGQ4Qv5w4nO9tOKa4EzoWi4LP+HeeaTHubQfcbtQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="striver-79-site/css/style.css" />
+</head>
+<body>
+
+<!-- ============ LOADING SPINNER ============ -->
+<div id="global-loader" class="global-loader" aria-hidden="true">
+  <div class="loader-ring"></div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="app-header">
+  <div class="header-left">
+    <button id="hamburger-btn" class="icon-btn hamburger-btn" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <a href="#home" class="brand" data-nav="home">
+      <span class="brand-mark"><i class="fa-solid fa-terminal"></i></span>
+      <span class="brand-text">Striver<span class="brand-accent">-79</span></span>
+    </a>
+  </div>
+
+  <nav class="header-nav">
+    <button class="nav-link" data-nav="home">Home</button>
+    <button class="nav-link" data-nav="explorer">Explorer</button>
+    <a class="nav-link" href="https://github.com/Adityarish/Striver-79" target="_blank" rel="noopener">Repository</a>
+  </nav>
+
+  <div class="header-right">
+    <div class="global-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="global-search-input" placeholder="Search 79 problems…" autocomplete="off" />
+      <kbd>/</kbd>
+    </div>
+    <select id="global-lang-select" class="header-select" aria-label="Select Language">
+      <option value="all">All Languages</option>
+      <option value="cpp">C++</option>
+      <option value="java">Java</option>
+      <option value="python">Python</option>
+    </select>
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark / light mode" title="Toggle theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <a class="icon-btn" href="https://github.com/Adityarish/Striver-79" target="_blank" rel="noopener" aria-label="View on GitHub" title="View on GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER OVERLAY ============ -->
+<div id="drawer-overlay" class="drawer-overlay"></div>
+
+<!-- ============ HOME / LANDING PAGE ============ -->
+<main id="page-home" class="page page-home">
+  <section class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <span class="hero-eyebrow"><i class="fa-solid fa-code-branch"></i> Adityarish / Striver-79</span>
+      <h1 class="hero-title">Striver DSA-79<br><span class="hero-title-accent">Solutions</span></h1>
+      <p class="hero-subtitle">Clean, interview-ready implementations in C++, Java and Python — one repository, three languages, seventy-nine problems.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" data-nav="explorer">
+          <i class="fa-solid fa-folder-tree"></i> View Problems
+        </button>
+        <a class="btn btn-secondary" href="https://github.com/Adityarish/Striver-79" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> GitHub Repository
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-list-check"></i></div>
+        <div class="stat-value" data-count="79">0</div>
+        <div class="stat-label">Problems</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="stat-value" data-count="3">0</div>
+        <div class="stat-label">Languages</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <div class="stat-value" data-count="11">0</div>
+        <div class="stat-label">Topics</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <div class="stat-value-static">100%</div>
+        <div class="stat-label">Responsive</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="topics-preview">
+    <h2 class="section-heading">Browse by topic</h2>
+    <div id="topic-cards" class="topic-cards"></div>
+  </section>
+</main>
+
+<!-- ============ EXPLORER PAGE ============ -->
+<main id="page-explorer" class="page page-explorer" hidden>
+
+  <!-- LEFT SIDEBAR -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <span><i class="fa-solid fa-folder-tree"></i> Explorer</span>
+      <button id="sidebar-collapse-btn" class="icon-btn icon-btn-sm" title="Collapse sidebar">
+        <i class="fa-solid fa-angles-left"></i>
+      </button>
+    </div>
+
+    <div class="sidebar-filters">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="problem-search-input" placeholder="Search by name, topic or language…" autocomplete="off" />
+      </div>
+      <div class="filter-row">
+        <div class="filter-group">
+          <button class="chip chip-easy" data-filter="difficulty" data-value="Easy">Easy</button>
+          <button class="chip chip-medium" data-filter="difficulty" data-value="Medium">Medium</button>
+          <button class="chip chip-hard" data-filter="difficulty" data-value="Hard">Hard</button>
+        </div>
+        <div class="filter-group">
+          <button class="chip" data-filter="platform" data-value="leetcode"><i class="fa-solid fa-code"></i> LeetCode</button>
+          <button class="chip" data-filter="platform" data-value="gfg"><i class="fa-solid fa-g"></i> GfG</button>
+        </div>
+        <button id="clear-filters-btn" class="chip chip-clear" hidden>
+          <i class="fa-solid fa-xmark"></i> Clear
+        </button>
+      </div>
+    </div>
+
+    <div id="sidebar-tree" class="sidebar-tree"></div>
+  </aside>
+
+
+  <!-- RIGHT CODE VIEWER -->
+  <section id="viewer-panel" class="viewer-panel">
+    <div id="viewer-empty" class="viewer-empty">
+      <i class="fa-solid fa-file-code"></i>
+      <p>Select a problem from the list to view its solution.</p>
+    </div>
+
+    <div id="viewer-content" class="viewer-content" hidden>
+      <div class="viewer-header">
+        <div class="viewer-title-row">
+          <h2 id="viewer-title" class="viewer-title"></h2>
+          <button id="viewer-close-btn" class="icon-btn icon-btn-sm mobile-only" title="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="viewer-badges">
+          <span id="viewer-difficulty-badge" class="badge"></span>
+          <span id="viewer-topic-badge" class="badge badge-topic"></span>
+        </div>
+        <div class="viewer-links">
+          <a id="viewer-leetcode-link" class="link-btn" target="_blank" rel="noopener">
+            <i class="fa-solid fa-code"></i> Open LeetCode
+          </a>
+          <a id="viewer-gfg-link" class="link-btn" target="_blank" rel="noopener">
+            <i class="fa-solid fa-g"></i> Open GfG
+          </a>
+          <a id="viewer-github-link" class="link-btn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> Open GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="lang-selector" id="lang-selector">
+        <button class="lang-btn" data-lang="cpp">C++</button>
+        <button class="lang-btn" data-lang="java">Java</button>
+        <button class="lang-btn" data-lang="python">Python</button>
+      </div>
+
+      <div class="code-toolbar">
+        <span id="code-filename" class="code-filename"></span>
+        <div class="code-actions">
+          <button id="wrap-btn" class="icon-btn icon-btn-sm" title="Toggle word wrap"><i class="fa-solid fa-text-width"></i></button>
+          <button id="copy-btn" class="icon-btn icon-btn-sm" title="Copy code"><i class="fa-regular fa-copy"></i></button>
+          <button id="download-btn" class="icon-btn icon-btn-sm" title="Download file"><i class="fa-solid fa-download"></i></button>
+          <button id="fullscreen-btn" class="icon-btn icon-btn-sm" title="Fullscreen"><i class="fa-solid fa-expand"></i></button>
+        </div>
+      </div>
+
+      <div id="code-container" class="code-container">
+        <div id="code-loading" class="code-loading" hidden>
+          <div class="loader-ring loader-ring-sm"></div> Fetching source…
+        </div>
+        <div id="code-error" class="code-error" hidden>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span id="code-error-text">Could not load this file.</span>
+        </div>
+        <pre id="code-pre" class="line-numbers"><code id="code-block" class="language-clike"></code></pre>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="app-footer">
+  <div class="footer-inner">
+    <span class="footer-brand"><i class="fa-solid fa-terminal"></i> Striver-79</span>
+    <p class="footer-tagline">A topic-organized companion to the Striver A2Z 79 Last-Moment DSA Sheet.</p>
+    <div class="footer-links">
+      <a href="https://github.com/Adityarish" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/aditya-k-1b2679400/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:adityakumarnhce@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+    </div>
+    <p class="footer-copy">Built by Aditya Kumar · Solutions served directly from GitHub.</p>
+  </div>
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<!-- Prism.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" integrity="sha512-3P9CG3RG05FrmZ1mQVUXY9J//lS4rzUCKAKB0OQEs2v1SW5Da2c0nlAfg3TgtQFhZCZDcAJcNW8lRUZlHnkPeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-TeH2AbcTG3S+9lVGrE/1Yj2gt71xZ/xhrkcxUxkgAbUeNfSXTQK2eKPfzGLI+ZlZWyNQ4X21fFOeghwuNJZerA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-cRw7yjtnFy3exwOZR3Kt50/mfHDwFTLKgeQ9rDlyTZUvBTa5cV0RwGtAQV2NqIF5MvYY0G0ZlXbAsHGwbwZ8ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="striver-79-site/js/script.js"></script>
+</body>
+</html>
