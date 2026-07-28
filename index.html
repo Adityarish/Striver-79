@@ -57,6 +57,9 @@
       <option value="java">Java</option>
       <option value="python">Python</option>
     </select>
+    <button id="auth-btn" class="icon-btn" aria-label="Login or Dashboard" title="Login / Dashboard">
+      <i class="fa-solid fa-user"></i>
+    </button>
     <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark / light mode" title="Toggle theme">
       <i class="fa-solid fa-moon"></i>
     </button>
@@ -105,10 +108,43 @@
         <div class="stat-value" data-count="11">0</div>
         <div class="stat-label">Topics</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-        <div class="stat-value-static">100%</div>
-        <div class="stat-label">Responsive</div>
+    </div>
+  </section>
+
+  <section class="dashboard-visuals" id="home-dashboard" hidden>
+    <h2 class="section-heading">Your Progress</h2>
+    <div class="dash-grid">
+      <div class="dash-card">
+        <h3>Overall Progress</h3>
+        <div class="progress-circle-wrap">
+          <svg viewBox="0 0 36 36" class="circular-chart overall-chart">
+            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <path class="circle" id="home-progress-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+            <text x="18" y="20.35" class="percentage" id="home-progress-text">0%</text>
+          </svg>
+        </div>
+        <p class="dash-stats"><span id="home-solved-count">0</span> / 79 Solved</p>
+      </div>
+
+      <div class="dash-card difficulty-card">
+        <h3>Difficulty Breakdown</h3>
+        <div class="diff-stats">
+          <div class="diff-item">
+            <span class="diff-label easy">Easy</span>
+            <div class="diff-bar-wrap"><div class="diff-bar easy-bar" id="bar-easy" style="width: 0%"></div></div>
+            <span class="diff-count" id="count-easy">0</span>
+          </div>
+          <div class="diff-item">
+            <span class="diff-label medium">Medium</span>
+            <div class="diff-bar-wrap"><div class="diff-bar medium-bar" id="bar-medium" style="width: 0%"></div></div>
+            <span class="diff-count" id="count-medium">0</span>
+          </div>
+          <div class="diff-item">
+            <span class="diff-label hard">Hard</span>
+            <div class="diff-bar-wrap"><div class="diff-bar hard-bar" id="bar-hard" style="width: 0%"></div></div>
+            <span class="diff-count" id="count-hard">0</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Striver-79</title>
+  <link rel="stylesheet" href="striver-79-site/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="auth-page">
+  <div class="auth-container">
+    <a href="index.html" class="brand auth-brand">
+      <span class="brand-mark"><i class="fa-solid fa-terminal"></i></span>
+      <span class="brand-text">Striver<span class="brand-accent">-79</span></span>
+    </a>
+    
+    <div class="auth-card">
+      <h2>Welcome Back</h2>
+      <p class="auth-subtitle">Login to sync your progress</p>
+      
+      <form id="login-form" class="auth-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" class="search-bar" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="search-bar" required />
+        </div>
+        <div id="auth-error" class="auth-error" hidden></div>
+        <button type="submit" class="btn btn-primary btn-block" id="login-submit">Login</button>
+      </form>
+      
+      <p class="auth-footer">
+        Don't have an account? <a href="register.html">Sign up</a>
+      </p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = document.getElementById("login-submit");
+      const err = document.getElementById("auth-error");
+      btn.disabled = true; err.hidden = true;
+      
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password })
+        });
+        const data = await res.json();
+        
+        if (res.ok) {
+          localStorage.setItem("striver79-token", data.token);
+          localStorage.setItem("striver79-username", data.username);
+          
+          if (data.solvedProblems) {
+            const localSolved = JSON.parse(localStorage.getItem("striver79-solved") || "[]");
+            const merged = Array.from(new Set([...localSolved, ...data.solvedProblems]));
+            localStorage.setItem("striver79-solved", JSON.stringify(merged));
+          }
+          
+          window.location.href = "index.html";
+        } else {
+          err.textContent = data.message || "Invalid credentials";
+          err.hidden = false;
+        }
+      } catch (error) {
+        err.textContent = "Network error. Make sure the server is running.";
+        err.hidden = false;
+      } finally {
+        btn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "striver-79",
+  "version": "1.0.0",
+  "description": "[![Problems](https://img.shields.io/badge/Problems-79-blue)](#topics) [![Languages](https://img.shields.io/badge/Languages-C%2B%2B%20%7C%20Java%20%7C%20Python-green)](#languages) [![Solutions](https://img.shields.io/badge/Total%20Implementations-237-orange)](#repository-structure)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adityarish/Striver-79.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Adityarish/Striver-79/issues"
+  },
+  "homepage": "https://github.com/Adityarish/Striver-79#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.8.1"
+  }
+}

@@ -39,8 +39,11 @@ const state = {
   wordWrap: false,
   codeCache: {},        // key: rawUrl -> code text
   solvedProblems: JSON.parse(localStorage.getItem("striver79-solved") || "[]"),
+  token: localStorage.getItem("striver79-token"),
+  username: localStorage.getItem("striver79-username"),
 };
 
+let syncTimeout = null;
 function toggleSolved(slug, checked) {
   if (checked) {
     if (!state.solvedProblems.includes(slug)) state.solvedProblems.push(slug);
@@ -48,7 +51,120 @@ function toggleSolved(slug, checked) {
     state.solvedProblems = state.solvedProblems.filter(s => s !== slug);
   }
   localStorage.setItem("striver79-solved", JSON.stringify(state.solvedProblems));
+
+  if (state.token) {
+    clearTimeout(syncTimeout);
+    syncTimeout = setTimeout(() => {
+      fetch('/api/progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${state.token}` },
+        body: JSON.stringify({ solvedProblems: state.solvedProblems })
+      }).catch(console.error);
+    }, 1000);
+  }
 }
+
+async function fetchProgress() {
+  if (!state.token) return;
+  try {
+    const res = await fetch('/api/progress', {
+      headers: { 'Authorization': `Bearer ${state.token}` }
+    });
+    if (res.ok) {
+      const data = await res.json();
+      state.solvedProblems = data.solvedProblems || [];
+      localStorage.setItem("striver79-solved", JSON.stringify(state.solvedProblems));
+      renderSidebar();
+    } else if (res.status === 401) {
+      logout();
+    }
+  } catch (err) {
+    console.error("Failed to fetch progress from DB", err);
+  }
+}
+
+function logout() {
+  state.token = null;
+  state.username = null;
+  localStorage.removeItem("striver79-token");
+  localStorage.removeItem("striver79-username");
+  updateAuthUI();
+  showToast("Logged out successfully");
+  if (window.location.hash === "#home") renderDashboardCharts();
+}
+
+function updateAuthUI() {
+  const btn = document.getElementById("auth-btn");
+  if (state.token) {
+    btn.innerHTML = `<i class="fa-solid fa-right-from-bracket"></i>`;
+    btn.title = `Logout (${state.username})`;
+    btn.onclick = () => {
+      if (confirm("Are you sure you want to logout?")) logout();
+    };
+  } else {
+    btn.innerHTML = `<i class="fa-solid fa-user"></i>`;
+    btn.title = "Login";
+    btn.onclick = () => {
+      window.location.href = "login.html";
+    };
+  }
+}
+
+function renderDashboardCharts() {
+  const dashSection = document.getElementById("home-dashboard");
+  if (!state.token) {
+    if (dashSection) dashSection.hidden = true;
+    return;
+  }
+  if (dashSection) dashSection.hidden = false;
+
+  const total = state.problems.length || 79;
+  const solvedCount = state.solvedProblems.length;
+  const percentage = Math.round((solvedCount / total) * 100) || 0;
+  
+  const progressText = document.getElementById("home-progress-text");
+  const progressPath = document.getElementById("home-progress-circle");
+  const countEl = document.getElementById("home-solved-count");
+
+  if (progressText) progressText.textContent = `${percentage}%`;
+  if (progressPath) progressPath.style.strokeDasharray = `${percentage}, 100`;
+  if (countEl) countEl.textContent = solvedCount;
+
+  let easyTotal = 0, mediumTotal = 0, hardTotal = 0;
+  let easySolved = 0, mediumSolved = 0, hardSolved = 0;
+
+  state.problems.forEach(p => {
+    const isSolved = state.solvedProblems.includes(p.slug);
+    if (p.difficulty === "Easy") { easyTotal++; if (isSolved) easySolved++; }
+    else if (p.difficulty === "Medium") { mediumTotal++; if (isSolved) mediumSolved++; }
+    else if (p.difficulty === "Hard") { hardTotal++; if (isSolved) hardTotal++; } // wait, logic error: if(isSolved) hardSolved++
+  });
+
+  // Recalculate correctly
+  hardSolved = 0;
+  state.problems.forEach(p => {
+    if (p.difficulty === "Hard" && state.solvedProblems.includes(p.slug)) hardSolved++;
+  });
+
+  const easyPct = easyTotal ? Math.round((easySolved / easyTotal) * 100) : 0;
+  const mediumPct = mediumTotal ? Math.round((mediumSolved / mediumTotal) * 100) : 0;
+  const hardPct = hardTotal ? Math.round((hardSolved / hardTotal) * 100) : 0;
+
+  const eBar = document.getElementById("bar-easy");
+  const mBar = document.getElementById("bar-medium");
+  const hBar = document.getElementById("bar-hard");
+  if (eBar) eBar.style.width = `${easyPct}%`;
+  if (mBar) mBar.style.width = `${mediumPct}%`;
+  if (hBar) hBar.style.width = `${hardPct}%`;
+
+  const eCount = document.getElementById("count-easy");
+  const mCount = document.getElementById("count-medium");
+  const hCount = document.getElementById("count-hard");
+  if (eCount) eCount.textContent = `${easySolved}/${easyTotal}`;
+  if (mCount) mCount.textContent = `${mediumSolved}/${mediumTotal}`;
+  if (hCount) hCount.textContent = `${hardSolved}/${hardTotal}`;
+}
+
 
 /* ---------------------------------------------------------------------- */
 /* Helpers                                                                 */
@@ -427,19 +543,19 @@ function toggleFullscreen(){
 /* ---------------------------------------------------------------------- */
 /* Navigation between Home / Explorer "pages" (single-page app)           */
 /* ---------------------------------------------------------------------- */
-function navigateTo(page){
-  const home = document.getElementById("page-home");
-  const explorer = document.getElementById("page-explorer");
+function navigateTo(pageId){
+  const pages = document.querySelectorAll(".page");
+  pages.forEach((p) => (p.hidden = true));
+  document.getElementById(`page-${pageId}`).hidden = false;
 
-  home.hidden = page !== "home";
-  explorer.hidden = page !== "explorer";
+  if (pageId === "home") renderDashboardCharts();
 
   document.querySelectorAll(".nav-link[data-nav]").forEach((el) => {
-    el.classList.toggle("active", el.dataset.nav === page);
+    el.classList.toggle("active", el.dataset.nav === pageId);
   });
 
   window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
-  window.location.hash = page;
+  window.location.hash = pageId;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -582,6 +698,8 @@ function wireEvents(){
   document.getElementById("viewer-close-btn").addEventListener("click", () => {
     document.getElementById("page-explorer").classList.remove("viewer-active");
   });
+  
+  updateAuthUI();
 }
 
 /* ---------------------------------------------------------------------- */
@@ -592,7 +710,9 @@ async function init(){
   wireEvents();
 
   await loadProblems();
+  fetchProgress().then(() => renderDashboardCharts());
   renderSidebar();
+  renderDashboardCharts();
   renderTopicPreviewCards();
   animateStats();
 

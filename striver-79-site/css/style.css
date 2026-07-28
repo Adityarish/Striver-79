@@ -241,7 +241,7 @@ button{font-family:inherit;cursor:pointer;}
 
 /* ---- STATS ---- */
 .stats-section{padding:56px 24px;max-width:1080px;margin:0 auto;}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin:0 auto;}
 .stat-card{
   background:var(--bg-surface);border:1px solid var(--border);border-radius:var(--radius-lg);
   padding:26px 20px;text-align:center;transition:transform var(--transition),border-color var(--transition);
@@ -346,6 +346,91 @@ button{font-family:inherit;cursor:pointer;}
   transition: all 0.2s ease;
   display: flex; align-items: center; justify-content: center;
 }
+/* ============ HOMEPAGE DASHBOARD VISUALS ============ */
+.dashboard-visuals {
+  padding: 0 24px 56px; max-width: 1080px; margin: 0 auto;
+}
+.dash-grid {
+  display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .dash-grid { grid-template-columns: 1fr 1fr; }
+}
+.dash-card {
+  background: var(--bg-surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 24px; text-align: center;
+}
+.dash-card h3 {
+  margin-top: 0; font-size: 16px; color: var(--text-secondary); margin-bottom: 24px; font-weight: 600;
+}
+.dash-stats {
+  margin-top: 16px; font-size: 15px; font-weight: 600; color: var(--text-primary);
+}
+.dash-stats span { color: var(--accent); font-size: 20px; }
+
+/* Circular Progress */
+.progress-circle-wrap { width: 140px; margin: 0 auto; position: relative; }
+.circular-chart { display: block; margin: 0 auto; max-width: 100%; max-height: 250px; }
+.circle-bg { fill: none; stroke: var(--bg-surface-2); stroke-width: 2.8; }
+.circle {
+  fill: none; stroke-width: 2.8; stroke-linecap: round;
+  stroke: var(--accent); transition: stroke-dasharray 1s ease-out;
+}
+.percentage {
+  fill: var(--text-primary); font-family: var(--font-mono); font-size: 8px;
+  text-anchor: middle; font-weight: 700;
+}
+
+/* Difficulty Breakdown Bars */
+.difficulty-card { text-align: left; }
+.diff-stats { display: flex; flex-direction: column; gap: 16px; }
+.diff-item { display: flex; align-items: center; gap: 12px; }
+.diff-label {
+  font-size: 12px; font-weight: 600; width: 50px; text-transform: uppercase;
+}
+.diff-label.easy { color: var(--easy); }
+.diff-label.medium { color: var(--medium); }
+.diff-label.hard { color: var(--hard); }
+
+.diff-bar-wrap {
+  flex: 1; background: var(--bg-surface-2); height: 8px; border-radius: 4px; overflow: hidden;
+}
+.diff-bar {
+  height: 100%; border-radius: 4px; transition: width 1s ease-out;
+}
+.diff-bar.easy-bar { background: var(--easy); }
+.diff-bar.medium-bar { background: var(--medium); }
+.diff-bar.hard-bar { background: var(--hard); }
+
+.diff-count {
+  font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary); width: 40px; text-align: right;
+}
+
+/* Auth Pages Styling */
+.auth-page { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: var(--bg-canvas); }
+.auth-container { width: 100%; max-width: 400px; padding: 20px; }
+.auth-brand { justify-content: center; margin-bottom: 32px; font-size: 24px; text-decoration: none; display: flex; align-items: center; }
+.auth-card {
+  background: var(--bg-surface); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 32px 24px;
+  box-shadow: var(--shadow-lg); text-align: left;
+}
+.auth-card h2 { margin: 0 0 8px 0; font-size: 22px; text-align: center; }
+.auth-subtitle { text-align: center; color: var(--text-tertiary); font-size: 14px; margin-bottom: 24px; }
+.auth-form { display: flex; flex-direction: column; gap: 16px; }
+.auth-form .form-group { display: flex; flex-direction: column; gap: 6px; text-align: left; }
+.auth-form label { font-size: 13px; font-weight: 600; color: var(--text-secondary); text-align: left; }
+.auth-form input {
+  width: 100%; padding: 10px 14px; background: var(--bg-surface-2);
+  border: 1px solid var(--border); border-radius: var(--radius-md);
+  color: var(--text-primary); outline: none; transition: border-color var(--transition);
+}
+.auth-form input:focus { border-color: var(--accent); }
+.btn-block { width: 100%; justify-content: center; margin-top: 8px; padding: 12px; }
+.auth-error { color: var(--hard); font-size: 13px; font-weight: 600; text-align: center; background: var(--hard-bg); padding: 8px; border-radius: var(--radius-sm); }
+.auth-footer { text-align: center; margin-top: 24px; font-size: 14px; color: var(--text-secondary); }
+.auth-footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.auth-footer a:hover { text-decoration: underline; }
 .custom-checkbox:hover .checkmark { border-color: var(--text-secondary); }
 .custom-checkbox input:checked ~ .checkmark {
   background-color: var(--accent); border-color: var(--accent);
