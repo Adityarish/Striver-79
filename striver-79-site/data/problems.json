@@ -1,0 +1,1029 @@
+[
+  {
+    "title": "Count Inversions",
+    "slug": "countInversions",
+    "topic": "Array and Hashing",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Count+Inversions",
+    "gfg": "https://www.geeksforgeeks.org/?s=Count+Inversions",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Find Missing And Repeating Number",
+    "slug": "findMissingAndRepeatingNumber",
+    "topic": "Array and Hashing",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Find+Missing+And+Repeating+Number",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find+Missing+And+Repeating+Number",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Kadane Algorithm",
+    "slug": "kadaneAlgorithm",
+    "topic": "Array and Hashing",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Kadane+Algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Kadane+Algorithm",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Majority Element",
+    "slug": "majorityElement",
+    "topic": "Array and Hashing",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Majority+Element",
+    "gfg": "https://www.geeksforgeeks.org/?s=Majority+Element",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Maximum Product Subarray",
+    "slug": "maximumProductSubarray",
+    "topic": "Array and Hashing",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Maximum+Product+Subarray",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum+Product+Subarray",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Next Permutation",
+    "slug": "nextPermutation",
+    "topic": "Array and Hashing",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Next+Permutation",
+    "gfg": "https://www.geeksforgeeks.org/?s=Next+Permutation",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Sub Array With Xor K",
+    "slug": "subArrayWithXorK",
+    "topic": "Array and Hashing",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Sub+Array+With+Xor+K",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sub+Array+With+Xor+K",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Three Sum",
+    "slug": "threeSum",
+    "topic": "Array and Hashing",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Three+Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Three+Sum",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Aggressive Cows",
+    "slug": "aggressiveCows",
+    "topic": "Binary Search",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Aggressive+Cows",
+    "gfg": "https://www.geeksforgeeks.org/?s=Aggressive+Cows",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Book Allocation Problem",
+    "slug": "bookAllocationProblem",
+    "topic": "Binary Search",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Book+Allocation+Problem",
+    "gfg": "https://www.geeksforgeeks.org/?s=Book+Allocation+Problem",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Find Peak Element In Array",
+    "slug": "findPeakElementInArray",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Find+Peak+Element+In+Array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Find+Peak+Element+In+Array",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Gas Station",
+    "slug": "gasStation",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Gas+Station",
+    "gfg": "https://www.geeksforgeeks.org/?s=Gas+Station",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Koko Eating Bananas",
+    "slug": "kokoEatingBananas",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Koko+Eating+Bananas",
+    "gfg": "https://www.geeksforgeeks.org/?s=Koko+Eating+Bananas",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Median Of Two Sorted Arrays",
+    "slug": "medianOfTwoSortedArrays",
+    "topic": "Binary Search",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Median+Of+Two+Sorted+Arrays",
+    "gfg": "https://www.geeksforgeeks.org/?s=Median+Of+Two+Sorted+Arrays",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Minimum In Rotated Sorted Array",
+    "slug": "minimumInRotatedSortedArray",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Minimum+In+Rotated+Sorted+Array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum+In+Rotated+Sorted+Array",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Search In Rotated Sorted Array Two",
+    "slug": "searchInRotatedSortedArrayTwo",
+    "topic": "Binary Search",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Search+In+Rotated+Sorted+Array+Two",
+    "gfg": "https://www.geeksforgeeks.org/?s=Search+In+Rotated+Sorted+Array+Two",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Burst Balloons",
+    "slug": "burstBalloons",
+    "topic": "Dynamic Programming",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Burst+Balloons",
+    "gfg": "https://www.geeksforgeeks.org/?s=Burst+Balloons",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Buy And Stock Sell",
+    "slug": "buyAndStockSell",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Buy+And+Stock+Sell",
+    "gfg": "https://www.geeksforgeeks.org/?s=Buy+And+Stock+Sell",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Longest Common Subsequence",
+    "slug": "longestCommonSubsequence",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Longest+Common+Subsequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest+Common+Subsequence",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Longest Increasing Subsequence",
+    "slug": "longestIncreasingSubsequence",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Longest+Increasing+Subsequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest+Increasing+Subsequence",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Longest Palindromic Subsequence",
+    "slug": "longestPalindromicSubsequence",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Longest+Palindromic+Subsequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Longest+Palindromic+Subsequence",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Maximum Sum Of Non Adjacent Elements",
+    "slug": "maximumSumOfNonAdjacentElements",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Maximum+Sum+Of+Non+Adjacent+Elements",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum+Sum+Of+Non+Adjacent+Elements",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Minimum Path Sum In Grid",
+    "slug": "minimumPathSumInGrid",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Minimum+Path+Sum+In+Grid",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum+Path+Sum+In+Grid",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Ninjas Training",
+    "slug": "ninjasTraining",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Ninjas+Training",
+    "gfg": "https://www.geeksforgeeks.org/?s=Ninjas+Training",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Rod Cutting Problem",
+    "slug": "rodCuttingProblem",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Rod+Cutting+Problem",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rod+Cutting+Problem",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Shortest Common Supersequence",
+    "slug": "shortestCommonSupersequence",
+    "topic": "Dynamic Programming",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Shortest+Common+Supersequence",
+    "gfg": "https://www.geeksforgeeks.org/?s=Shortest+Common+Supersequence",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Subset Sum Equal To Target",
+    "slug": "subsetSumEqualToTarget",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Subset+Sum+Equal+To+Target",
+    "gfg": "https://www.geeksforgeeks.org/?s=Subset+Sum+Equal+To+Target",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Zero One Knapsack",
+    "slug": "zeroOneKnapsack",
+    "topic": "Dynamic Programming",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Zero+One+Knapsack",
+    "gfg": "https://www.geeksforgeeks.org/?s=Zero+One+Knapsack",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Accounts Merge",
+    "slug": "accountsMerge",
+    "topic": "Graphs",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Accounts+Merge",
+    "gfg": "https://www.geeksforgeeks.org/?s=Accounts+Merge",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Alien Dictionary",
+    "slug": "alienDictionary",
+    "topic": "Graphs",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Alien+Dictionary",
+    "gfg": "https://www.geeksforgeeks.org/?s=Alien+Dictionary",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Bellman Ford Algorithm",
+    "slug": "bellmanFordAlgorithm",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Bellman+Ford+Algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bellman+Ford+Algorithm",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Bridges In Graph",
+    "slug": "bridgesInGraph",
+    "topic": "Graphs",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Bridges+In+Graph",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bridges+In+Graph",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Cheapest Flights Within K Stops",
+    "slug": "cheapestFlightsWithinKStops",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Cheapest+Flights+Within+K+Stops",
+    "gfg": "https://www.geeksforgeeks.org/?s=Cheapest+Flights+Within+K+Stops",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Course Schedule Two",
+    "slug": "courseScheduleTwo",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Course+Schedule+Two",
+    "gfg": "https://www.geeksforgeeks.org/?s=Course+Schedule+Two",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Djisktras Algorithm",
+    "slug": "djisktrasAlgorithm",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Djisktras+Algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Djisktras+Algorithm",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Floyd Warshal Algorithm",
+    "slug": "floydWarshalAlgorithm",
+    "topic": "Graphs",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Floyd+Warshal+Algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Floyd+Warshal+Algorithm",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Kruskals Algorithm",
+    "slug": "kruskalsAlgorithm",
+    "topic": "Graphs",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Kruskals+Algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Kruskals+Algorithm",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Number Of Distinct Islands",
+    "slug": "numberOfDistinctIslands",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Number+Of+Distinct+Islands",
+    "gfg": "https://www.geeksforgeeks.org/?s=Number+Of+Distinct+Islands",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Rotten Oranges",
+    "slug": "rottenOranges",
+    "topic": "Graphs",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Rotten+Oranges",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rotten+Oranges",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Word Ladder",
+    "slug": "wordLadder",
+    "topic": "Graphs",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Word+Ladder",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word+Ladder",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "K Largest Elements",
+    "slug": "kLargestElements",
+    "topic": "Heaps",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=K+Largest+Elements",
+    "gfg": "https://www.geeksforgeeks.org/?s=K+Largest+Elements",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Min Heap Implementation",
+    "slug": "minHeapImplementation",
+    "topic": "Heaps",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Min+Heap+Implementation",
+    "gfg": "https://www.geeksforgeeks.org/?s=Min+Heap+Implementation",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Task Scheduler",
+    "slug": "taskScheduler",
+    "topic": "Heaps",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Task+Scheduler",
+    "gfg": "https://www.geeksforgeeks.org/?s=Task+Scheduler",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Detect Cycle",
+    "slug": "detectCycle",
+    "topic": "Linked List",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Detect+Cycle",
+    "gfg": "https://www.geeksforgeeks.org/?s=Detect+Cycle",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Intersection Point Of Two List",
+    "slug": "intersectionPointOfTwoList",
+    "topic": "Linked List",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Intersection+Point+Of+Two+List",
+    "gfg": "https://www.geeksforgeeks.org/?s=Intersection+Point+Of+Two+List",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Middle Of List",
+    "slug": "middleOfList",
+    "topic": "Linked List",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Middle+Of+List",
+    "gfg": "https://www.geeksforgeeks.org/?s=Middle+Of+List",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Remove Nnode From End",
+    "slug": "removeNnodeFromEnd",
+    "topic": "Linked List",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Remove+Nnode+From+End",
+    "gfg": "https://www.geeksforgeeks.org/?s=Remove+Nnode+From+End",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Segregate Even Odd",
+    "slug": "segregateEvenOdd",
+    "topic": "Linked List",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Segregate+Even+Odd",
+    "gfg": "https://www.geeksforgeeks.org/?s=Segregate+Even+Odd",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Sort Linked List",
+    "slug": "sortLinkedList",
+    "topic": "Linked List",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Sort+Linked+List",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sort+Linked+List",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Combination Sum",
+    "slug": "combinationSum",
+    "topic": "Recursion and Backtracking",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Combination+Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Combination+Sum",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "M Coloring",
+    "slug": "mColoring",
+    "topic": "Recursion and Backtracking",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=M+Coloring",
+    "gfg": "https://www.geeksforgeeks.org/?s=M+Coloring",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "N Queens",
+    "slug": "nQueens",
+    "topic": "Recursion and Backtracking",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=N+Queens",
+    "gfg": "https://www.geeksforgeeks.org/?s=N+Queens",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Print Subsequences",
+    "slug": "printSubsequences",
+    "topic": "Recursion and Backtracking",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Print+Subsequences",
+    "gfg": "https://www.geeksforgeeks.org/?s=Print+Subsequences",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Sudoku Solver",
+    "slug": "sudokuSolver",
+    "topic": "Recursion and Backtracking",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Sudoku+Solver",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sudoku+Solver",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Word Search",
+    "slug": "wordSearch",
+    "topic": "Recursion and Backtracking",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Word+Search",
+    "gfg": "https://www.geeksforgeeks.org/?s=Word+Search",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Asteroid Collision",
+    "slug": "asteroidCollision",
+    "topic": "Stacks and Queues",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Asteroid+Collision",
+    "gfg": "https://www.geeksforgeeks.org/?s=Asteroid+Collision",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Largest Rectangle Histogram",
+    "slug": "largestRectangleHistogram",
+    "topic": "Stacks and Queues",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Largest+Rectangle+Histogram",
+    "gfg": "https://www.geeksforgeeks.org/?s=Largest+Rectangle+Histogram",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Lru Cache",
+    "slug": "lruCache",
+    "topic": "Stacks and Queues",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Lru+Cache",
+    "gfg": "https://www.geeksforgeeks.org/?s=Lru+Cache",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Next Greater Element",
+    "slug": "nextGreaterElement",
+    "topic": "Stacks and Queues",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Next+Greater+Element",
+    "gfg": "https://www.geeksforgeeks.org/?s=Next+Greater+Element",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Sliding Window Maximum",
+    "slug": "slidingWindowMaximum",
+    "topic": "Stacks and Queues",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Sliding+Window+Maximum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Sliding+Window+Maximum",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Trap Rain Water",
+    "slug": "trapRainWater",
+    "topic": "Stacks and Queues",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Trap+Rain+Water",
+    "gfg": "https://www.geeksforgeeks.org/?s=Trap+Rain+Water",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Minimum Cost To Make String Valid",
+    "slug": "minimumCostToMakeStringValid",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Minimum+Cost+To+Make+String+Valid",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum+Cost+To+Make+String+Valid",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Pattern Searching Using Z Algorithm",
+    "slug": "patternSearchingUsingZAlgorithm",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Pattern+Searching+Using+Z+Algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Pattern+Searching+Using+Z+Algorithm",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Rabin Karp",
+    "slug": "rabinKarp",
+    "topic": "Strings",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Rabin+Karp",
+    "gfg": "https://www.geeksforgeeks.org/?s=Rabin+Karp",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Search Pattern KMP Algorithm",
+    "slug": "searchPatternKmpAlgorithm",
+    "topic": "Strings",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Search+Pattern+KMP+Algorithm",
+    "gfg": "https://www.geeksforgeeks.org/?s=Search+Pattern+KMP+Algorithm",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Bottom View Of Tree",
+    "slug": "bottomViewOfTree",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Bottom+View+Of+Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Bottom+View+Of+Tree",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Construct Tree From Inorder And Preorder",
+    "slug": "constructTreeFromInorderAndPreorder",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Construct+Tree+From+Inorder+And+Preorder",
+    "gfg": "https://www.geeksforgeeks.org/?s=Construct+Tree+From+Inorder+And+Preorder",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Delete Node In BST",
+    "slug": "deleteNodeInBst",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Delete+Node+In+BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Delete+Node+In+BST",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Diameter Of Tree",
+    "slug": "diameterOfTree",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Diameter+Of+Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Diameter+Of+Tree",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Lowest Common Ancestor",
+    "slug": "lowestCommonAncestor",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Lowest+Common+Ancestor",
+    "gfg": "https://www.geeksforgeeks.org/?s=Lowest+Common+Ancestor",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Lowest Common Ancestor In BST",
+    "slug": "lowestCommonAncestorInBst",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Lowest+Common+Ancestor+In+BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Lowest+Common+Ancestor+In+BST",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Maximum Path Sum",
+    "slug": "maximumPathSum",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Maximum+Path+Sum",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum+Path+Sum",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Minimum Time To Burn Tree",
+    "slug": "minimumTimeToBurnTree",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Minimum+Time+To+Burn+Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Minimum+Time+To+Burn+Tree",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Pair Sum In BST",
+    "slug": "pairSumInBst",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Pair+Sum+In+BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Pair+Sum+In+BST",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Pre Order Of Tree",
+    "slug": "preOrderOfTree",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Easy",
+    "leetcode": "https://leetcode.com/search/?q=Pre+Order+Of+Tree",
+    "gfg": "https://www.geeksforgeeks.org/?s=Pre+Order+Of+Tree",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Size Of Largest BST",
+    "slug": "sizeOfLargestBst",
+    "topic": "Trees (BT + BST)",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Size+Of+Largest+BST",
+    "gfg": "https://www.geeksforgeeks.org/?s=Size+Of+Largest+BST",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Implement Trie",
+    "slug": "implementTrie",
+    "topic": "Tries",
+    "difficulty": "Medium",
+    "leetcode": "https://leetcode.com/search/?q=Implement+Trie",
+    "gfg": "https://www.geeksforgeeks.org/?s=Implement+Trie",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Maximum Xor With An Element From Array",
+    "slug": "maximumXorWithAnElementFromArray",
+    "topic": "Tries",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Maximum+Xor+With+An+Element+From+Array",
+    "gfg": "https://www.geeksforgeeks.org/?s=Maximum+Xor+With+An+Element+From+Array",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  },
+  {
+    "title": "Number Of Distinct Substrings In String",
+    "slug": "numberOfDistinctSubstringsInString",
+    "topic": "Tries",
+    "difficulty": "Hard",
+    "leetcode": "https://leetcode.com/search/?q=Number+Of+Distinct+Substrings+In+String",
+    "gfg": "https://www.geeksforgeeks.org/?s=Number+Of+Distinct+Substrings+In+String",
+    "languages": [
+      "cpp",
+      "java",
+      "python"
+    ]
+  }
+]
