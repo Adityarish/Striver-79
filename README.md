@@ -1,109 +1,122 @@
-# 🚀 Striver DSA-79 Solutions
+# Striver DSA-79 Solutions
 
-A curated collection of my solutions to the **Striver DSA-79 Sheet** in multiple programming languages. This repository is part of my interview preparation and focuses on writing clean, optimized, and easy-to-understand solutions.
+[![Problems](https://img.shields.io/badge/Problems-79-blue)](#topics)
+[![Languages](https://img.shields.io/badge/Languages-C%2B%2B%20%7C%20Java%20%7C%20Python-green)](#languages)
+[![Solutions](https://img.shields.io/badge/Total%20Implementations-237-orange)](#repository-structure)
 
----
-
-## 📌 About
-
-The **Striver DSA-79 Sheet** is one of the most popular interview preparation sheets, covering essential Data Structures and Algorithms concepts asked in top product-based companies.
-
-📖 **Sheet Link:** https://takeuforward.org/interview-sheets/strivers-79-last-moment-dsa-sheet-ace-interviews/
+A comprehensive, topic-organized solution repository for the [Striver A2Z DSA Sheet (79 Last-Moment Problems)](https://takeuforward.org/interview-sheets/strivers-79-last-moment-dsa-sheet-ace-interviews/). Each problem is implemented in **C++**, **Java**, and **Python** with a consistent structure designed for interview preparation and quick reference.
 
 ---
 
-## 📂 Repository Structure
+## Table of Contents
 
-Solutions are organized **topic-wise**, and each topic contains implementations in multiple programming languages.
+- [Overview](#overview)
+- [Repository Structure](#repository-structure)
+- [Topics](#topics)
+- [Languages](#languages)
+- [How to Use](#how-to-use)
+- [Author](#author)
+
+---
+
+## Overview
+
+The Striver DSA-79 sheet covers the most frequently asked data structures and algorithms questions in technical interviews at product-based companies. This repository provides:
+
+- **Complete coverage** — all 79 problems across 11 core topics
+- **Multi-language parity** — identical problem sets in C++, Java, and Python
+- **Consistent layout** — every topic follows the same `cpp/`, `java/`, and `python/` folder convention
+- **Interview-ready code** — optimized solutions with problem statements and reference links in each file
+
+---
+
+## Repository Structure
+
+Solutions are grouped by topic. Within each topic, implementations are separated by language:
 
 ```text
-Striver-DSA-79/
+Striver-79/
 │
-├── Arrays/
+├── Array and Hashing/
 │   ├── cpp/
 │   ├── java/
 │   └── python/
 │
 ├── Binary Search/
 │   ├── cpp/
-│   │   ├── aggressiveCows.cpp
-│   │   ├── bookAllocationProblem.cpp
-│   │   ├── findPeakElementInArray.cpp
-│   │   └── ...
-│   │
 │   ├── java/
-│   │   ├── aggressiveCows.java
-│   │   ├── bookAllocationProblem.java
-│   │   └── ...
-│   │
 │   └── python/
-│       ├── aggressiveCows.py
-│       ├── bookAllocationProblem.py
-│       └── ...
 │
 ├── Dynamic Programming/
 ├── Graphs/
-├── Trees/
-└── ...
+├── Heaps/
+├── Linked List/
+├── Recursion and Backtracking/
+├── Stacks and Queues/
+├── Strings/
+├── Trees (BT + BST)/
+└── Tries/
 ```
 
----
+Each solution file includes:
 
-## 💻 Languages Used
-
-- C++
-- Java
-- Python
+1. The full problem statement
+2. A link to the original problem source
+3. A clean, idiomatic implementation in the target language
 
 ---
 
-## 🎯 Repository Goals
+## Topics
 
-- Solve all 79 problems from the Striver Sheet.
-- Provide optimized solutions.
-- Implement the same problem in multiple languages.
-- Build a strong foundation in Data Structures & Algorithms.
-- Prepare for coding interviews and online assessments.
-
----
-
-## 📚 Topics Covered
-
-- Arrays
-- Binary Search
-- Linked List
-- Stack & Queue
-- Trees
-- Binary Search Trees
-- Graphs
-- Greedy
-- Heaps
-- Dynamic Programming
-- Tries
-- Strings
-- Recursion & Backtracking
-- Binary Search on Answers
-- Sliding Window
-- And more...
+| Topic | Problems | C++ | Java | Python |
+|-------|:--------:|:---:|:----:|:------:|
+| [Array and Hashing](Array%20and%20Hashing/) | 8 | 8 | 8 | 8 |
+| [Binary Search](Binary%20Search/) | 8 | 8 | 8 | 8 |
+| [Dynamic Programming](Dynamic%20Programming/) | 12 | 12 | 12 | 12 |
+| [Graphs](Graphs/) | 12 | 12 | 12 | 12 |
+| [Heaps](Heaps/) | 3 | 3 | 3 | 3 |
+| [Linked List](Linked%20List/) | 6 | 6 | 6 | 6 |
+| [Recursion and Backtracking](Recursion%20and%20Backtracking/) | 6 | 6 | 6 | 6 |
+| [Stacks and Queues](Stacks%20and%20Queues/) | 6 | 6 | 6 | 6 |
+| [Strings](Strings/) | 4 | 4 | 4 | 4 |
+| [Trees (BT + BST)](Trees%20(BT%20+%20BST)/) | 11 | 11 | 11 | 11 |
+| [Tries](Tries/) | 3 | 3 | 3 | 3 |
+| **Total** | **79** | **79** | **79** | **79** |
 
 ---
 
-## 📈 Progress
+## Languages
 
-- ✅ Clean folder structure
-- ✅ Multiple language implementations
-- 🔄 Repository updated regularly with new solutions
+| Language | Folder | File Extension |
+|----------|--------|----------------|
+| C++ | `cpp/` | `.cpp` |
+| Java | `java/` | `.java` |
+| Python | `python/` | `.py` |
+
+All three languages cover the same set of 79 problems, making it easy to compare approaches or study a solution in your preferred language.
 
 ---
 
-## 👨‍💻 Author
+## How to Use
+
+1. **Browse by topic** — navigate to the relevant folder (e.g., `Graphs/`, `Dynamic Programming/`).
+2. **Pick a language** — open the corresponding `cpp/`, `java/`, or `python/` subdirectory.
+3. **Read the problem** — each file starts with the problem statement and an official link.
+4. **Study or run** — compile or execute the solution locally as needed for practice.
+
+> **Tip:** When preparing for interviews, try solving a problem yourself first, then compare your approach with the implementation here across languages to deepen your understanding.
+
+---
+
+## Author
 
 **Aditya Kumar**
 
-📧 **Email:** adityakumarnhce@gmail.com
-
-💼 **LinkedIn:** https://www.linkedin.com/in/aditya-k-1b2679400/
+- Email: [adityakumarnhce@gmail.com](mailto:adityakumarnhce@gmail.com)
+- LinkedIn: [aditya-k-1b2679400](https://www.linkedin.com/in/aditya-k-1b2679400/)
 
 ---
 
-### ⭐ If you find this repository helpful, don't forget to Star it!
+<p align="center">
+  If this repository helped with your preparation, consider giving it a star.
+</p>
